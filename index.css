@@ -8,7 +8,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -31,7 +31,7 @@ a{
     height: 100%;
 }
 
-.link{
+.link {
     color: blue;
 }
 
@@ -45,6 +45,7 @@ a{
     margin-bottom: 20px;
     padding-bottom: 20px;
 }
+
 .profile-photo {
     width: 150px;
     border-radius: 20%;
@@ -62,7 +63,7 @@ a{
         padding-bottom: 50px;
     }
 
-    .detail-section{
+    .detail-section {
         margin-top: 150px;
     }
 
@@ -75,10 +76,12 @@ a{
         font-size: 18px;
     }
 }
-.pro_name{
+
+.pro_name {
     padding-left: 25px;
 }
-.profile-name{
+
+.profile-name {
     color: black;
     font-weight: normal;
     /* font-size: 24px; */
@@ -132,11 +135,29 @@ a{
     width: 100%;
     font-size: 16px;
 }
-h3, h4{
+
+h3,
+h4 {
     margin: 0;
     font-weight: normal;
 }
 
 p {
     font-size: 18px;
+}
+
+.work-experience-label {
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 0px;
+    color: rgb(98, 136, 138);
+}
+
+.work-experience-sub-label {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 0px;
+    color: rgb(166, 204, 207);
+    padding-top: 5px;
+    padding-bottom: 10px;
 }
