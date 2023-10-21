@@ -148,16 +148,16 @@ p {
 
 .work-experience-label {
     font-size: 24px;
-    font-weight: bold;
+    font-weight: bolder;
     padding-bottom: 0px;
-    color: rgb(98, 136, 138);
+    color: rgb(31, 131, 137);
 }
 
 .work-experience-sub-label {
     font-size: 18px;
-    font-weight: bold;
+    font-weight: bolder;
     padding-bottom: 0px;
-    color: rgb(166, 204, 207);
+    color: rgb(35 85 88);
     padding-top: 5px;
     padding-bottom: 10px;
 }
