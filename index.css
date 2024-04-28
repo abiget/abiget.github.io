@@ -3,161 +3,159 @@
 }
 
 body {
-    margin-left: 10px;
-    background-color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Jersey 25';
+    margin: 0px;
+    padding: 0pxs;
+    color: #fff;
+    background-color: #061229;
 }
-
-a {
-    text-decoration: none;
-}
-
-/* .container {
-    padding-left: 10px;
-    padding-right: 0px;
-} */
-
-.button {
-    background-color: white;
-    border: none;
-    padding: 15px 40px;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-/* Style For Content */
-.content {
-    width: 95%;
-    height: 100%;
-}
-
-.link {
-    color: blue;
-}
-
-/* Style For Profile Section */
-.profile-section {
+.container .navbar-container {
     width: 100%;
-    padding-top: 30px;
-    color: black;
+    height: 100px;
+    font-size: 16px;
+    font-weight: 800;
+
+}
+.container .navbar-container a.navbar-brand i {
+    font-size: 32px;
+}
+.container .navbar-container a.navbar-brand{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgb(20, 89, 89) !important;
+    text-align: center;
+}
+
+.container .navbar-container a.navbar-brand:hover {
+    border: 1px solid #03314A;
+}
+
+.container .navbar-container .collapse .contact a {
+    border: 1px solid #03314A;
+    padding: 10px 15px;
+}
+.container .navbar-container .collapse .navbar-nav{
+    width: 85%;
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
+    align-items: center;
 }
 
-.profile-photo {
-    width: 150px;
-    border-radius: 20%;
-    border: solid 3px white;
+.container a, .container .navbar-toggler {
+    color: #fff;
+    text-decoration: none;
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Add transition for smooth effect */
+} 
+
+.container a:hover, .container .navbar-toggler:hover {
+    color: #03314A;
+    box-shadow: 5px 5px 10px rgba(247, 25, 25, 0.5); /* Add box-shadow on hover */
+    transform: translateY(-3px) translateX(-3px); /* Move the button 3px up */
 }
 
-@media screen and (max-width: 480px) {
-    .profile-photo {
-        width: 70px;
-        border-radius: 20%;
-        border: solid 3px white;
-    }
-
-    .profile-section {
-        padding-bottom: 50px;
-    }
-
-    .detail-section {
-        margin-top: 150px;
-    }
-
-    .card-title {
-        font-weight: normal;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        color: #2d2d2d;
-        border-bottom: dashed 1px #dbdbdb;
-        font-size: 18px;
-    }
+.container a:active, .navbar-toggler:active {
+    color: rgb(20, 89, 89);
 }
 
-.pro_name {
-    padding-left: 25px;
+.container .active {
+    color: rgb(20, 89, 89) !important;
 }
 
-.profile-name {
-    color: black;
-    font-weight: normal;
-    /* font-size: 24px; */
+.container .content-container {
+    text-align: left;
+    margin: 60px 100px 100px 100px;
+    color: #8A8E8E;
 }
-
-.profile-detail {
-    color: black;
-    font-size: 20px;
-    padding-top: 2px;
-    /* line-height: 25px; */
-}
-
-.profile-follow {
-    background-color: #39b85d;
-    color: white;
-    transition: all 0.3s;
+.container .content-container .lead {
     font-size: 16px;
 }
 
-.profile-follow:hover {
-    background-color: white;
-    color: #4c99b8;
-    transition: all 0.3s;
+.container .content-container .banner .banner-text .lead {
+    margin-top: 25px;
+    width: 65%;
 }
 
-/* Style For Detail Section */
-.detail-section {
-    float: left;
-    width: 100%;
-    padding-top: 30px;
+.container .content-container .banner-text h1 {
+    color: #fff;
+}
+.container .content-container .banner-text h1 span {
+    font-family: 'Jersey25','Cursive', sans-serif !important;
+    color: rgb(20, 89, 89);
+    text-transform: uppercase !important;
 }
 
-/* Card Style */
-.card {
-    background-color: white;
-    line-height: 25px;
-    margin-bottom: 15px;
+.container .content-container .banner-text .intro {
+    color: #8A8E8E;
+}
+.container .content-container .banner-text .more-info a {
+    border: 1px solid #03314A;
+    padding: 10px 15px;
 }
 
-.card-title {
-    font-weight: normal;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    color: #2d2d2d;
-    border-bottom: dashed 1px #dbdbdb;
+.container .content-container .about {
+    margin-top: 100px;
 }
 
-.card-body {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    width: 100%;
-    font-size: 16px;
+.container .content-container .about .about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 50px;
 }
 
-h3,
-h4 {
-    margin: 0;
-    font-weight: normal;
+.container .content-container .about .about-content .photo img {
+    border: 1px solid #03314A;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(20, 89, 89) !important;
+}
+.container .content-container .about .about-content .photo img:hover {
+    box-shadow: 5px 5px 10px rgba(247, 25, 25, 0.5) !important;
+    transform: translateY(-3px) translateX(-3px); /* Move the button 3px up */
+    transition: filter .25s linear, transform .25s linear, box-shadow .25s linear;
 }
 
-p {
-    font-size: 18px;
+.container .content-container h2.heading {
+    margin-bottom: 40px;
+    color: #fff;
+}
+.container .content-container .experiences {
+    margin-top: 100px;
+}
+.container .content-container .projects {
+    margin-top: 100px;
 }
 
-.work-experience-label {
-    font-size: 24px;
-    font-weight: bolder;
-    padding-bottom: 0px;
-    color: rgb(31, 131, 137);
-}
+@media screen and (max-width: 768px) {
+    .container .navbar-container {
+        flex-direction: row-reverse;
+        align-items: center;
+        height: auto;
+        margin-top: 10px;
+    }
 
-.work-experience-sub-label {
-    font-size: 18px;
-    font-weight: bolder;
-    padding-bottom: 0px;
-    color: rgb(97 169 173);
-    padding-top: 5px;
-    padding-bottom: 10px;
+    .container .navbar-container .collapse .navbar-nav {
+        align-items: flex-start;
+        /* padding: 10px; */
+    }
+    .container .content-container {
+        margin: 0px;
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    .container .content-container .lead {
+        width: 100% !important;
+        text-align: justify;
+        padding: 20px;
+    }
+
+    .container .content-container .about .about-content {
+        flex-direction: column-reverse;
+    }
+
+    .container .content-container .about .about-content .photo img {
+        width: 100%;
+        height: auto;
+    }
 }
