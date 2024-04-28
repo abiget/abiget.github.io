@@ -5,10 +5,11 @@
 body {
     font-family: 'Jersey 25';
     margin: 0px;
-    padding: 0pxs;
+    padding: 0px;
     color: #fff;
     background-color: #061229;
 }
+
 .container .navbar-container {
     width: 100%;
     height: 100px;
@@ -16,10 +17,12 @@ body {
     font-weight: 800;
 
 }
+
 .container .navbar-container a.navbar-brand i {
     font-size: 32px;
 }
-.container .navbar-container a.navbar-brand{
+
+.container .navbar-container a.navbar-brand {
     border-radius: 50%;
     width: 50px;
     height: 50px;
@@ -35,26 +38,33 @@ body {
     border: 1px solid #03314A;
     padding: 10px 15px;
 }
-.container .navbar-container .collapse .navbar-nav{
+
+.container .navbar-container .collapse .navbar-nav {
     width: 85%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.container a, .container .navbar-toggler {
+.container a,
+.container .navbar-toggler {
     color: #fff;
     text-decoration: none;
-    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Add transition for smooth effect */
-} 
-
-.container a:hover, .container .navbar-toggler:hover {
-    color: #03314A;
-    box-shadow: 5px 5px 10px rgba(247, 25, 25, 0.5); /* Add box-shadow on hover */
-    transform: translateY(-3px) translateX(-3px); /* Move the button 3px up */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    /* Add transition for smooth effect */
 }
 
-.container a:active, .navbar-toggler:active {
+.container a:hover,
+.container .navbar-toggler:hover {
+    color: #03314A;
+    box-shadow: 5px 5px 10px rgba(247, 25, 25, 0.5);
+    /* Add box-shadow on hover */
+    transform: translateY(-3px) translateX(-3px);
+    /* Move the button 3px up */
+}
+
+.container a:active,
+.navbar-toggler:active {
     color: rgb(20, 89, 89);
 }
 
@@ -67,6 +77,7 @@ body {
     margin: 60px 100px 100px 100px;
     color: #8A8E8E;
 }
+
 .container .content-container .lead {
     font-size: 16px;
 }
@@ -79,8 +90,9 @@ body {
 .container .content-container .banner-text h1 {
     color: #fff;
 }
+
 .container .content-container .banner-text h1 span {
-    font-family: 'Jersey25','Cursive', sans-serif !important;
+    font-family: 'Jersey25', 'Cursive', sans-serif !important;
     color: rgb(20, 89, 89);
     text-transform: uppercase !important;
 }
@@ -88,6 +100,7 @@ body {
 .container .content-container .banner-text .intro {
     color: #8A8E8E;
 }
+
 .container .content-container .banner-text .more-info a {
     border: 1px solid #03314A;
     padding: 10px 15px;
@@ -109,22 +122,154 @@ body {
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgb(20, 89, 89) !important;
 }
+
 .container .content-container .about .about-content .photo img:hover {
     box-shadow: 5px 5px 10px rgba(247, 25, 25, 0.5) !important;
-    transform: translateY(-3px) translateX(-3px); /* Move the button 3px up */
-    transition: filter .25s linear, transform .25s linear, box-shadow .25s linear;
+    transform: translateY(-3px) translateX(-3px);
+    /* Move the button 3px up */
+    transition: transform .25s linear, box-shadow .25s linear;
 }
 
 .container .content-container h2.heading {
     margin-bottom: 40px;
     color: #fff;
 }
+
+/* Contents-General::begin */
+.container .content-container .card .card-body-content .content .card-title {
+    color: #fff !important;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.container .content-container .card .card-body-content .content .card-title>.arrow {
+    font-weight: normal;
+}
+
+.container .content-container .link:hover .card .card-title {
+    color: rgb(20, 89, 89) !important;
+}
+
+.container .content-container .link:hover .card {
+    background-color: #01142d;
+}
+
+.container .content-container .link:hover .card .card-title>.arrow {
+    transform: translateY(-3px) translateX(3px);
+    /* Move the button 3px up */
+    transition: transform .25s linear, box-shadow .25s linear;
+    display: inline-block;
+    /* color: rgb(20, 89, 89) !important; */
+}
+
+/* Contents-General::end */
+
+/* Experiences::begin */
 .container .content-container .experiences {
     margin-top: 100px;
 }
+
+.container .content-container .experiences .experiences-contnet {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.container .content-container .experiences .card {
+    background-color: inherit;
+    color: #8A8E8E;
+    border: none;
+    width: auto;
+}
+
+.container .content-container .experiences .card .card-body-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.container .content-container .experiences .card .card-body-content .year {
+    font-weight: 800;
+    --tw-text-opacity: 1;
+    width: 40%;
+    color: rgb(226, 232, 240/var(--tw-text-opacity));
+    text-transform: uppercase;
+}
+
+.container .content-container .experiences .card .card-body-content .content .card-subtitle {
+    color: #8A8E8E !important;
+    font-weight: 600;
+    margin-top: 5px;
+    text-transform: capitalize;
+}
+
+.container .content-container .experiences .card .card-body-content .content .description {
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.container .content-container .experiences .card .card-body-content .content .description .skills {
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.container .content-container .experiences .card .card-body-content .content .description .skills .skill {
+    margin-top: 5px;
+}
+
+.container .content-container .experiences .card .card-body-content .content .description .skills .badge {
+    background-color: #264069;
+    color: cyan;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Experiences::end */
+
+/* Projects::begin */
 .container .content-container .projects {
     margin-top: 100px;
 }
+
+.container .content-container .projects .projects-contnet {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.container .content-container .projects .card {
+    background-color: inherit;
+    color: #8A8E8E;
+    border: none;
+    width: auto;
+}
+
+.container .content-container .projects .card .card-body-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
+}
+
+.container .content-container .projects .card .card-body-content .image {
+    margin-top: 5px;
+    width: 30%;
+}
+
+/* Projects::end */
+
+/* Contact::begin */
+.container .content-container .contact {
+    margin-top: 100px;
+}
+/* Contact::end */
+
 
 @media screen and (max-width: 768px) {
     .container .navbar-container {
@@ -138,6 +283,7 @@ body {
         align-items: flex-start;
         /* padding: 10px; */
     }
+
     .container .content-container {
         margin: 0px;
         margin-top: 25px;
