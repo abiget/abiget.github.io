@@ -5,11 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Anteneh Getachew</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
 </head>
 
@@ -53,17 +54,23 @@
     </nav>
 
     <div class="content-container">
-      <div class="banner">
+      <div class="banner" data-aos="fade-up" id="stars">
         <div class="banner-text">
           <h1 class="display-4 ml2">Hello, I'm <span>Anteneh Getachew</span> </h1>
           <h3 class="display-5 intro">I build Sites and Systems !</h3>
-          <p class="lead">I'm a software engineer with 2 years of experience with exceptional skill in PHP and Laravel.
-            I also competent with front end development as well as desgining. I
-            love to learn new technologies and I'm
-            always looking for new opportunities.</p>
+          <div class="banner-content-container">
+            <div class="moto-and-promotion">
+              <p class="lead">I'm a software engineer with 2 years of experience with exceptional skill in PHP and
+                Laravel.
+                I also competent with front end development as well as desgining. I
+                love to learn new technologies and I'm
+                always looking for new opportunities.</p>
 
-          <div class="more-info">
-            <a class="btn btn-default px-4 py-2 my-4">More Information</a>
+            </div>
+
+            <div class="more-info">
+              <a class="btn btn-default px-4 py-2 my-4">More Information</a>
+            </div>
           </div>
         </div>
       </div>
@@ -72,7 +79,9 @@
         <div class="about-text">
           <h2 class="heading display-8">About Me</h2>
           <div class="about-content">
-            <div class="lead-about">
+            <div class="lead-about" data-aos="flip-left"  data-aos-delay="50"
+              data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true"
+              data-aos-anchor-placement="top-center">
               <p class="lead">I'm a software engineer with 2 years of experience with exceptional skill in PHP and
                 Laravel.
                 I also competent with front end development as well as desgining. I
@@ -87,8 +96,52 @@
                 enim. Ab nemo possimus vel atque, est quos blanditiis vero ipsam!</p>
             </div>
 
-            <div class="photo">
+            <div class="photo" data-aos="flip-right"  data-aos-delay="50" data-aos-duration="1000"
+              data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-anchor-placement="top-center">
               <img src="images/abi.jpg" alt="" sizes="" srcset="" width="300px" height="300px">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="services">
+        <div class="services-text">
+          <h2 class="heading display-8">Services</h2>
+          <div class="services-content">
+            <div class="row">
+              <div class="service col-sm-6 col-md" data-aos="fade-up-right">
+                <div class="card" style="width: 18rem;">
+                  <img src="https://picsum.photos/50/25" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="service col-sm-6 col-md" data-aos="zoom-in-down">
+                <div class="card" style="width: 18rem;">
+                  <img src="https://picsum.photos/50/25" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="service col-sm-6 col-md" data-aos="fade-up-left">
+                <div class="card" style="width: 18rem;">
+                  <img src="https://picsum.photos/50/25" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -98,7 +151,8 @@
         <div class="experiences-text">
           <h2 class="heading display-8">Experiences</h2>
           <div class="experiences-contnet">
-            <a href="https://synapsesoftwares.net/" target="_blank" rel="noopener noreferrer" class="link">
+            <a href="https://synapsesoftwares.net/" target="_blank" rel="noopener noreferrer" class="link"
+              data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
               <div class="card">
                 <div class="card-body">
                   <div class="card-body-content">
@@ -133,7 +187,8 @@
                 </div>
               </div>
             </a>
-            <a href="https://synapsesoftwares.net/" target="_blank" rel="noopener noreferrer" class="link">
+            <a href="https://synapsesoftwares.net/" target="_blank" rel="noopener noreferrer" class="link"
+              data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
               <div class="card">
                 <div class="card-body">
                   <div class="card-body-content">
@@ -177,20 +232,22 @@
         <div class="projects-text">
           <h2 class="heading display-8">Projects</h2>
           <div class="projects-contnet">
-            <a href="https://synapsesoftwares.net/" target="_blank" rel="noopener noreferrer" class="link">
+            <a href="https://synapsesoftwares.net/" target="_blank" rel="noopener noreferrer" class="link"
+              data-aos="fade-up" data-aos-duration="3000">
               <div class="card">
                 <div class="card-body">
                   <div class="card-body-content">
-                    <div class="image"><img src="https://picsum.photos/100/100" alt=""></div>
+                    <div class="image"><img src="" alt=""></div>
+                    <!-- https://picsum.photos/100/100 -->
                     <div class="content d-flex flex-column">
                       <h5 class="card-title">Synapse Software Solutions<span class="mx-2 arrow">&#8599;</span></h5>
-                      <!-- <h5 class="card-subtitle">Software Engineer</h5> -->
+                      <h5 class="card-subtitle">Software Engineer</h5>
                       <div class="description">
                         <div class="card-text">
                           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima officia doloremque
                           consequuntur
                           in repudiandae odit rem ea modi animi delectus?
-                          Lorem ipsum dolor sit.
+                          Lorem ipsum dolor sit, amet consectetur
                         </div>
                       </div>
                     </div>
@@ -199,14 +256,15 @@
               </div>
             </a>
 
-            <a href="https://synapsesoftwares.net/" target="_blank" rel="noopener noreferrer" class="link">
+            <a href="https://synapsesoftwares.net/" target="_blank" rel="noopener noreferrer" class="link"
+              data-aos="fade-up" data-aos-duration="3000">
               <div class="card">
                 <div class="card-body">
                   <div class="card-body-content">
-                    <div class="image"><img src="https://picsum.photos/100/100" alt=""></div>
+                    <div class="image"><img src="" alt=""></div>
                     <div class="content d-flex flex-column">
                       <h5 class="card-title">Synapse Software Solutions<span class="mx-2 arrow">&#8599;</span></h5>
-                      <!-- <h5 class="card-subtitle">Software Engineer</h5> -->
+                      <h5 class="card-subtitle">Software Engineer</h5>
                       <div class="description">
                         <div class="card-text">
                           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima officia doloremque
@@ -229,20 +287,187 @@
         <div class="contact-text">
           <h2 class="heading display-8">Contact</h2>
           <div class="contact-contnet">
+            <div class="info my-3" data-aos="fade-up-right">
+              <div class="address">
+                <i class="fa-solid fa-location-dot"></i>
+                <h4 class="d-inline mx-1">Location:</h4>
+                <p>Woreda 09 basha wolde chilot, Arada Sub City, Addis Ababa,</p>
+              </div>
+
+              <div class="email">
+                <i class="fa-solid fa-envelope"></i>
+                <h4 class="d-inline mx-1">Email:</h4>
+                <p>info@gmail.com</p>
+              </div>
+
+              <div class="phone mb-2">
+                <i class="fa-solid fa-phone"></i>
+                <h4 class="d-inline mx-1">Call:</h4>
+                <p>+251115513990</p>
+              </div>
+
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7880.724309874413!2d38.75270387770995!3d9.030689800000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85f23d0aecdb%3A0x5368a36524cc3e5a!2sFDRE%20Ministry%20of%20Trade%20and%20Industry!5e0!3m2!1sen!2spl!4v1694002069266!5m2!1sen!2spl&quot; width=&quot;600&quot; height=&quot;450&quot; style=&quot;border:0;&quot;allowfullscreen=&quot;&quot; loading=&quot;lazy&quot; referrerpolicy=&quot;no-referrer-when-downgrade"
+                frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen=""></iframe>
+            </div>
+            <form id="contact-form" role="form" class="php-email-form" data-aos="fade-up-left">
+              <div class="row my-4">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required="">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required="">
+                </div>
+              </div>
+              <div class="form-group my-4">
+                <label for="subject">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required="">
+              </div>
+              <div class="form-group my-4">
+                <label for="message">Message</label>
+                <textarea class="form-control" name="message" id="message" rows="10" required="" data-gramm="false"
+                  wt-ignore-input="true"></textarea>
+              </div>
+              <div class="my-4 d-none">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center my-4">
+
+                <div class="alert alert-success" id="notify" style="display: none;">
+
+                </div>
+
+                <button class="btn btn-default px-4 py-2 my-4 submit-btn" type="submit" id="sendMessage">Send
+                  Message</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
-      <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
-        integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
-        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
-        crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-        crossorigin="anonymous"></script>
 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-      <script src="js/animator.js"></script>
+      <footer id="footer" class="footer">
+        <div class="footer-top">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 footer-contact" data-aos="zoom-in-down">
+                <h3><a class="footer-brand" href="/">
+                    <i class="fa-solid fa-a"></i>
+                  </a></h3>
+                <p>
+                  Yeka Subcity, Addis Ababa,
+                  ETHIOPIA <br><br>
+                  <strong>Call:</strong> +251942035265<br>
+                  <strong>Email:</strong> getachewante@gmail.com<br>
+                </p>
+              </div>
+
+              <div class="col-lg-6 col-md-6 footer-links" data-aos="zoom-in-down">
+                <h4>Social Networks</h4>
+                <p>Follow me on Github, twitter, facebook, and Linkedln.</p>
+                <div class="social-links">
+                  <a href="https://www.youtube.com/channel/UCQkxxIQ8dOfifvERD0ngKSQ" target="_blank" class="youtube"><i
+                      class="fa-brands fa-github"></i></a>
+                  <a href="https://twitter.com/ethiopia_trade" target="_blank" class="twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                  <a href="https://www.facebook.com/people/Ethiopian-Ministry-of-Trade-and-Regional-Integration/100076055062908/"
+                    target="_blank" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="https://www.linkedin.com/in/ethiopian-ministry-of-trade-and-industry-4234841b9?originalSubdomain=et"
+                    target="_blank" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <hr>
+        <div class="container footer-bottom">
+          <div class="copyright">
+            © Copyright <strong><span><a href="https://abiget.github.io" target="_blank"
+                  rel="noopener noreferrer">https://abiget.github.io</a></span></strong>. <span class="d-block d-md-inline">All Rights Reserved</span>
+          </div>
+          <div class="credits">
+            Designed and Developed By <a href="https://github.com/abiget/abiget.github.io" class="mr-4"
+              target="_blank"><span class="footer-name">Anteneh
+                Getachew Yitayal</span></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+      integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+
+    <script src="js/animator.js"></script>
+
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function () {
+        'use strict';
+        window.addEventListener('load', function () {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function (form) {
+            form.addEventListener('submit', function (event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+
+    <script>
+      AOS.init();
+    </script>
+
+    <script>
+      function createStars(i) {
+        for (var i; i; i--) {
+          drawStars();
+        }
+      }
+
+      function drawStars() {
+        var tmpStar = document.createElement('figure')
+        tmpStar.className = "star";
+        tmpStar.style.top = 100 * Math.random() + '%';
+        tmpStar.style.left = 100 * Math.random() + '%';
+        document.getElementById('stars').appendChild(tmpStar);
+      }
+
+      function selectStars() {
+        stars = document.querySelectorAll(".star");
+        console.log(stars)
+      }
+
+      function animateStars() {
+        Array.prototype.forEach.call(stars, function (el, i) {
+          TweenMax.to(el, Math.random() * 0.5 + 0.5, { opacity: Math.random(), onComplete: animateStars });
+        });
+      }
+
+      createStars(200);
+      selectStars();
+      animateStars();
+    </script>
 </body>
 
 </html>
