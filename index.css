@@ -36,8 +36,10 @@ body {
     height: 100px;
     font-size: 16px;
     font-weight: 800;
-    padding-left: 100px;
-    padding-right: 100px;
+    border: 10px solid #01142d;
+    box-shadow: 5px 5px 10px #01142d;
+    /* padding-left: 100px; */
+    /* padding-right: 100px; */
     background-color: #01142d;
 }
 
