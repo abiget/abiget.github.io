@@ -103,7 +103,7 @@
           <p class="hero-cta-line red">Open to internship opportunities in Data Science, ML & DL.</p>
           <div class="banner-content-container">
             <!-- <div class="moto-and-promotion">
-              <p class="lead">I build data-driven systems and intelligent applications at the intersection of machine learning research and software development. Explore my research, projects, and collaborations below.</p>
+              <p class="lead">I build data-driven systems and intelligent applications at the intersection of machine learning research and software development. Explore my research, projects, an[...]
             </div> -->
 
             <!-- <div class="more-info">
@@ -202,34 +202,49 @@
         </div>
       </div>
 
-      <div class="experiences" id="research_interests">
-        <div class="experiences-text">
+      <div class="research-interest-section" id="research_interests">
+        <div class="research-interest-text">
           <h2 class="heading display-8">Research Interests</h2>
-          <div class="experiences-contnet">
-            <div class="card" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-              <div class="card-body">
-                <div class="card-body-content">
-                  <div class="content d-flex flex-column">
-                    <div class="description">
-                      <div class="card-text">
-                        <ul>
-                          <li>Large Language Models (LLMs) and Transformer Architectures</li>
-                          <li>Multi-Agent Systems and AI Agents</li>
-                          <li>Representation Learning and Self-Supervised Learning</li>
-                          <li>Reasoning and Efficient Adaptation of Foundation Models</li>
-                          <li>Active Learning and Uncertainty Estimation</li>
-                          <li>Trustworthy and Human-Centered AI</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+          <p class="research-lead">
+            My research lies at the intersection of machine learning, large language models,
+            and efficient intelligent systems, with a focus on building models that are both
+            scalable and practically deployable.
+          </p>
+          <div class="research-grid">
+            <article class="research-card" data-aos="fade-up">
+              <div class="research-icon"><i class="fa-solid fa-brain"></i></div>
+              <div class="research-body">
+                <h4>Large Language Models</h4>
+                <p>Transformer architectures, training dynamics, adaptation, and evaluation of modern foundation models.</p>
               </div>
-            </div>
+            </article>
+
+            <article class="research-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="research-icon"><i class="fa-solid fa-gauge-high"></i></div>
+              <div class="research-body">
+                <h4>Model Inference Optimization</h4>
+                <p>Improving LLM efficiency through quantization, pruning, batching, memory optimization, and deployment-aware inference strategies.</p>
+              </div>
+            </article>
+
+            <article class="research-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="research-icon"><i class="fa-solid fa-network-wired"></i></div>
+              <div class="research-body">
+                <h4>Mixture-of-Experts Models</h4>
+                <p>Exploring sparse routing architectures that scale model capacity while reducing activation and compute costs.</p>
+              </div>
+            </article>
+
+            <article class="research-card" data-aos="fade-up" data-aos-delay="300">
+              <div class="research-icon"><i class="fa-solid fa-chart-line"></i></div>
+              <div class="research-body">
+                <h4>Representation Learning</h4>
+                <p>Self-supervised learning, contrastive objectives, and deep learning for vision and language applications.</p>
+              </div>
+            </article>
           </div>
         </div>
       </div>
-
 
       <div class="projects" id="projects">
         <div class="projects-text">
@@ -252,7 +267,7 @@
                       <div class="description">
                         <div class="card-text">
                           A minimal byte-pair encoding tokenizer with a C-accelerated core for faster training and
-                          encoding, while keeping the Python-facing API thin and easy to read inspired by Karpathy's minGPT. 
+                          encoding, while keeping the Python-facing API thin and easy to read inspired by Karpathy's minGPT.
                           It is designed to be a simple and efficient tokenizer for training and inference of language models.
                         </div>
                       </div>
@@ -298,6 +313,33 @@
                         </div>
                       </div>
 
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="https://github.com/abiget/gpt2-moe-from-scratch" target="_blank" rel="noopener noreferrer" class="link col-md-6" data-aos="fade-up" data-aos-duration="3000">
+              <div class="card">
+                <div class="card-body">
+                  <div class="card-body-content">
+                    <div class="image project-icon-wrap">
+                      <i class="fa-solid fa-brain project-icon"></i>
+                    </div>
+                    <div class="content d-flex flex-column">
+                      <h5 class="card-title">GPT-2 Mixture of Experts<span class="mx-2 arrow">&#8599;</span></h5>
+                      <div class="tech-stack mt-2">
+                        <span class="badge tech-badge">Python</span>
+                        <span class="badge tech-badge">PyTorch</span>
+                        <span class="badge tech-badge">MoE</span>
+                        <span class="badge tech-badge">LLM</span>
+                      </div>
+                      <div class="description">
+                        <div class="card-text">
+                          GPT-2 language model from scratch with a Mixture-of-Experts architecture — tokenizer,
+                          transformer blocks, sparse expert routing, training loop, and text generation workflow.
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -608,8 +650,6 @@
         </div>
       </div>
 
-
-
       <div class="experiences" id="experiences">
         <div class="experiences-text">
           <h2 class="heading display-8">Experiences</h2>
@@ -781,8 +821,6 @@
 
         </div>
       </div>
-
-
 
       <div class="publications" id="publications">
         <div class="publications-text">
@@ -975,7 +1013,7 @@
               </div>
 
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d88560.73707645445!2d11.037954369617122!3d46.080550922091625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478276cac9ce9ddb%3A0x27c6a299139ff547!2sTrento%2C%20Autonomous%20Province%20of%20Trento!5e0!3m2!1sen!2sit!4v1735518233558!5m2!1sen!2sit"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d88560.73707645445!2d11.037954369617122!3d46.080550922091625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478276ca[...]
                 frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen=""></iframe>
             </div>
           </div>
@@ -1000,18 +1038,17 @@
 
               <div class="col-lg-6 col-md-6 footer-links" data-aos="zoom-in-down">
                 <h4>Social Networks</h4>
-                <p>Follow me on GitHub, X (Twitter), and LinkedIn.</p>
+                <p>Follow me on Github, twitter, facebook, and Linkedln.</p>
                 <div class="social-links">
-                  <a href="https://github.com/abiget" target="_blank" rel="noopener noreferrer" class="github"><i
+                  <a href="#" target="_blank" class="youtube"><i
                       class="fa-brands fa-github"></i></a>
-                  <a href="https://twitter.com/GetachewAntene3" target="_blank" rel="noopener noreferrer"
-                    class="twitter">
+                  <a href="#" target="_blank" class="twitter">
                     <i class="fa-brands fa-twitter"></i>
                   </a>
-                  <a href="https://sites.google.com/view/abiget" target="_blank" rel="noopener noreferrer"
-                    title="Academic portfolio" class="facebook"><i class="fa-solid fa-graduation-cap"></i></a>
-                  <a href="https://www.linkedin.com/in/anteneh-getachew-5738961b7/" target="_blank" class="linkedin"><i
-                      class="fa-brands fa-linkedin"></i></a>
+                  <a href="#"
+                    target="_blank" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="https://www.linkedin.com/in/anteneh-getachew-5738961b7/"
+                    target="_blank" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
               </div>
 
@@ -1023,12 +1060,12 @@
         <div class="container footer-bottom">
           <div class="copyright">
             © Copyright <strong><span><a href="https://abiget.github.io" target="_blank"
-                  rel="noopener noreferrer">https://abiget.github.io/v2</a></span></strong>. <span
+                  rel="noopener noreferrer">https://abiget.github.io</a></span></strong>. <span
               class="d-block d-md-inline">All Rights Reserved</span>
           </div>
           <div class="credits">
-            Designed and Developed By <a href="https://github.com/abiget" class="mr-4" target="_blank"><span
-                class="footer-name">Anteneh
+            Designed and Developed By <a href="https://github.com/abiget" class="mr-4"
+              target="_blank"><span class="footer-name">Anteneh
                 Getachew Yitayal</span></a>
           </div>
         </div>
@@ -1036,8 +1073,11 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
       integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
       crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -1046,12 +1086,33 @@
     <script src="js/animator.js"></script>
 
     <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function () {
+        'use strict';
+        window.addEventListener('load', function () {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function (form) {
+            form.addEventListener('submit', function (event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+
+    <script>
       AOS.init();
     </script>
 
     <script>
-      function createStars(count) {
-        for (var i = count; i > 0; i--) {
+      function createStars(i) {
+        for (var i; i; i--) {
           drawStars();
         }
       }
@@ -1081,30 +1142,12 @@
     </script>
 
     <script>
-      // Close mobile menu when clicking a nav link or CTA button
-      document.querySelectorAll('#navbarTogglerDemo03 .nav-link, #navbarTogglerDemo03 .nav-cta a').forEach(function (link) {
-        link.addEventListener('click', function () {
-          var navbarCollapse = document.getElementById('navbarTogglerDemo03');
-          if (navbarCollapse.classList.contains('show')) {
-            document.querySelector('.navbar-toggler').click();
-          }
-        });
-      });
-
-      // Active link highlighting
       $('.navbar-nav .nav-item .nav-link').on('click', function () {
         $('.navbar-nav .nav-item .nav-link').removeClass('active');
         $(this).addClass('active');
-      });
 
-      // Close mobile menu when clicking outside
-      document.addEventListener('click', function (event) {
-        var navbarCollapse = document.getElementById('navbarTogglerDemo03');
-        if (navbarCollapse.classList.contains('show') &&
-          !event.target.closest('.navbar-collapse') &&
-          !event.target.closest('.navbar-toggler')) {
-          document.querySelector('.navbar-toggler').click();
-        }
+        $('.navbar-nav .nav-item .nav-link').css('opacity', '0.5'); // Set initial opacity for all links
+        $(this).animate({ opacity: 1 }, 'slow'); // Animate the clicked link to full opacity
       });
     </script>
 </body>
