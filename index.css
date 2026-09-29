@@ -382,6 +382,108 @@ body {
 }
 /* Education::end */
 
+/* Research-interst::begin */
+.research-interest-section {
+  margin-top: 100px;
+}
+
+.research-interest-text {
+  width: 100%;
+}
+
+.research-lead {
+  max-width: 850px;
+  margin-bottom: 35px;
+  color: #b9c3cf;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.research-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  min-height: 170px;
+  padding: 28px;
+  border: 1px solid #03314A;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #071b38, #01142d);
+  box-shadow: 5px 5px 10px rgba(20, 89, 89, 0.45);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.research-card:hover {
+  transform: translateY(-6px);
+  border-color: rgb(20, 89, 89);
+  box-shadow: 7px 7px 16px rgba(20, 180, 180, 0.35);
+}
+
+.research-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border: 1px solid rgb(20, 89, 89);
+  border-radius: 50%;
+  color: #35d0d0;
+  font-size: 22px;
+  background-color: #061229;
+}
+
+.research-body h4 {
+  margin: 3px 0 12px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.research-body p {
+  margin: 0;
+  color: #aeb6c2;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.project-icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border: 1px solid rgb(20, 89, 89);
+  border-radius: 10px;
+  color: #35d0d0;
+  background: linear-gradient(145deg, #071b38, #061229);
+  font-size: 38px;
+  box-shadow: 3px 3px 8px rgba(20, 89, 89, 0.45);
+}
+
+.project-icon {
+  font-size: 38px;
+}
+
+@media screen and (max-width: 768px) {
+  .research-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .research-card {
+    text-align: left;
+  }
+
+  .research-lead {
+    text-align: justify;
+  }
+}
+/* Research-interst::end */
+
 /* Publications::begin */
 .container .content-container .publications {
   margin-top: 100px;
