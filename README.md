@@ -1,8 +1,8 @@
 # abiget.github.io - v2
 
-My personal website and portfolio. This is version 2 of [https://abiget.github.io/](https://abiget.github.io/)
+My personal website and portfolio. This is version 2 of [https://abiget.github.io/](https://abiget.github.io/v1)
 
-https://abiget.github.io/v2/
+https://abiget.github.io
 
 ## Features
 
