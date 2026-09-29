@@ -311,31 +311,71 @@ body {
 }
 
 /* About::begin */
-
 .container .content-container .about {
   margin-top: 100px;
+}
+
+.container .content-container .about .about-text {
+  padding: 0 8px;
 }
 
 .container .content-container .about .about-content {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  column-gap: 50px;
+  align-items: center;
+  column-gap: 42px;
+  row-gap: 24px;
+  padding: 12px 8px 0;
+}
+
+.container .content-container .about .about-content .lead-about {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.container .content-container .about .about-content .lead-about .lead {
+  color: #d7dde4;
+  line-height: 1.9;
+  margin-bottom: 1.25rem;
+  font-size: 1rem;
+}
+
+.container .content-container .about .about-content .lead-about strong {
+  color: #f0f0f0;
+  font-weight: 700;
+}
+
+.container .content-container .about .about-content .lead-about h5 {
+  margin-top: 1.5rem;
+  padding: 0.9rem 1rem;
+  border-left: 3px solid #546e7a;
+  border-radius: 0 10px 10px 0;
+  background: rgba(84, 110, 122, 0.08);
+  color: #bfe9f1;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.container .content-container .about .about-content .photo {
+  flex: 0 0 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container .content-container .about .about-content .photo img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
   border: 1px solid #3a3a3a;
-  border-radius: 10px;
-  box-shadow: 0 4px 16px rgba(84, 110, 122, 0.3) !important;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(84, 110, 122, 0.18) !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .container .content-container .about .about-content .photo img:hover {
-  box-shadow: 0 6px 20px rgba(84, 110, 122, 0.5) !important;
-  transform: translateY(-3px) translateX(-3px);
-  /* Move the button 3px up */
-  transition:
-    transform 0.25s linear,
-    box-shadow 0.25s linear;
+  box-shadow: 0 10px 28px rgba(84, 110, 122, 0.28) !important;
+  transform: translateY(-3px);
 }
 
 .container .content-container h2.heading {
@@ -373,116 +413,121 @@ body {
   margin-top: 100px;
 }
 
+.container .content-container .education .experiences-contnet {
+  display: grid;
+  gap: 18px;
+}
+
 .container .content-container .education .card {
-  margin: 12px 0;
+  margin: 0;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid #3a3a3a;
+  border-radius: 14px;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.container .content-container .education .link:hover .card {
+  border-color: #546e7a;
+  box-shadow: 0 10px 26px rgba(84, 110, 122, 0.15);
+  transform: translateY(-2px);
 }
 
 .container .content-container .education .card .card-body {
-  padding: 20px 24px;
-}
-/* Education::end */
-
-/* Research-interst::begin */
-.research-interest-section {
-  margin-top: 100px;
+  padding: 22px 24px;
 }
 
-.research-interest-text {
-  width: 100%;
-}
-
-.research-lead {
-  max-width: 850px;
-  margin-bottom: 35px;
-  color: #b9c3cf;
-  line-height: 1.8;
-  text-align: justify;
-}
-
-.research-grid {
+.container .content-container .education .card .card-body-content {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 24px;
-}
-
-.research-card {
-  display: flex;
-  align-items: flex-start;
+  grid-template-columns: 90px minmax(180px, 210px) minmax(0, 1fr);
+  align-items: center;
   gap: 20px;
-  min-height: 170px;
-  padding: 28px;
-  border: 1px solid #03314A;
-  border-radius: 12px;
-  background: linear-gradient(145deg, #071b38, #01142d);
-  box-shadow: 5px 5px 10px rgba(20, 89, 89, 0.45);
-  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  min-width: 0;
 }
 
-.research-card:hover {
-  transform: translateY(-6px);
-  border-color: rgb(20, 89, 89);
-  box-shadow: 7px 7px 16px rgba(20, 180, 180, 0.35);
-}
-
-.research-icon {
+.container .content-container .education .card .card-body-content .university-logo {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 52px;
-  height: 52px;
-  border: 1px solid rgb(20, 89, 89);
-  border-radius: 50%;
-  color: #35d0d0;
-  font-size: 22px;
-  background-color: #061229;
+  width: 90px;
+  min-width: 90px;
+  min-height: 90px;
+  padding: 10px;
+  background: rgba(84, 110, 122, 0.08);
+  border: 1px solid rgba(84, 110, 122, 0.28);
+  border-radius: 12px;
 }
 
-.research-body h4 {
-  margin: 3px 0 12px;
-  color: #fff;
-  font-size: 20px;
+.container .content-container .education .card .card-body-content .university-logo img {
+  width: 100%;
+  max-width: 76px;
+  height: auto;
+  object-fit: contain;
+  background: transparent;
+  border-radius: 0;
+  border: none;
+  padding: 0;
+  box-shadow: none;
+}
+
+.container .content-container .education .card .card-body-content .year {
+  font-weight: 800;
+  color: #e2e8f0;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  min-width: 0;
+}
+
+.container .content-container .education .card .card-body-content .content {
+  min-width: 0;
+}
+
+.container .content-container .education .card .card-body-content .content .card-title {
+  margin-bottom: 8px;
+  color: #f0f0f0 !important;
+  font-size: 1.08rem;
+  text-transform: none;
+  letter-spacing: 0.02em;
+}
+
+.container .content-container .education .card .card-body-content .content .card-subtitle {
+  margin: 0;
+  color: #d0d0d0 !important;
+  font-size: 1rem;
   font-weight: 700;
 }
 
-.research-body p {
-  margin: 0;
-  color: #aeb6c2;
-  font-size: 15px;
-  line-height: 1.7;
+.container .content-container .education .card .card-body-content .content .card-subtitle h6 {
+  margin-top: 4px;
+  margin-bottom: 0;
+  color: #a9b2bd !important;
+  font-weight: 500;
+  font-size: 0.9rem;
 }
 
-.project-icon-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100px;
-  height: 100px;
-  border: 1px solid rgb(20, 89, 89);
-  border-radius: 10px;
-  color: #35d0d0;
-  background: linear-gradient(145deg, #071b38, #061229);
-  font-size: 38px;
-  box-shadow: 3px 3px 8px rgba(20, 89, 89, 0.45);
+.container .content-container .education .card .card-body-content .content .description {
+  margin-top: 10px;
 }
 
-.project-icon {
-  font-size: 38px;
+.container .content-container .education .card .card-body-content .content .card-text {
+  color: #c9ced6;
+  line-height: 1.75;
 }
 
-@media screen and (max-width: 768px) {
-  .research-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .research-card {
-    text-align: left;
-  }
-
-  .research-lead {
-    text-align: justify;
-  }
+.container .content-container .education .card .card-body-content .content .skills {
+  margin-top: 12px;
 }
-/* Research-interst::end */
+
+.container .content-container .education .card .card-body-content .content .badge-edu {
+  background: #546e7a;
+  color: #fff;
+  border: 1px solid rgba(84, 110, 122, 0.3);
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+}
+/* Education::end */
 
 /* Publications::begin */
 .container .content-container .publications {
@@ -1100,263 +1145,75 @@ body {
     flex-direction: row-reverse;
     align-items: center;
     height: auto;
-    padding: 20px;
   }
-
   .container .navbar-container .collapse .navbar-nav {
-    align-items: flex-start;
-    /* padding: 10px; */
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
   }
-
-  .nav-cta {
+  .container .navbar-container .collapse .nav-cta {
+    width: 100%;
+    justify-content: center;
     margin-top: 12px;
     margin-left: 0;
-    flex-wrap: nowrap;
-  }
-
-  /* info */
-  .container .content-container .contact .contact-contnet .info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .btn-nav {
-    padding: 8px 14px;
-    font-size: 13px;
-    white-space: nowrap;
-  }
-
-  .container .content-container {
-    margin: 0px;
-    margin-top: 100px;
-    text-align: center;
-    height: 80vh;
   }
   .container .content-container .banner.hero-box {
-    padding: 24px 16px 32px;
+    padding: 32px 20px 40px;
   }
-
-  .container .content-container .banner .banner-text {
-    padding: 0 8px;
-  }
-
   .container .content-container .banner .banner-text h1 {
-    font-size: 1.6rem;
-    margin-bottom: 8px;
+    font-size: 2.2rem;
   }
-
-  .container .content-container .banner .banner-text .intro {
-    font-size: 1rem;
-  }
-
-  .container .content-container .banner .banner-text .hero-cta-line {
-    font-size: 1rem;
-    margin-bottom: 24px;
-  }
-
-  .container .content-container .banner .banner-text .banner-content-container {
-    gap: 24px;
-  }
-
-  .container .content-container .banner .banner-text .moto-and-promotion .lead {
-    max-width: 100%;
-    padding: 0 8px;
-  }
-
-  .container .content-container .lead {
-    width: 100% !important;
-    text-align: justify;
-    padding: 20px;
-  }
-
-  /* About::mobile::begin */
-  /* .container .content-container .about {
-        margin-top: 50px;
-    } */
   .container .content-container .about .about-content {
-    flex-direction: column-reverse;
+    flex-direction: column;
+    align-items: stretch;
   }
-
-  .container .content-container .about .about-content .photo img {
+  .container .content-container .about .about-content .photo {
+    flex-basis: auto;
     width: 100%;
+  }
+  .container .content-container .about .about-content .photo img {
+    width: min(100%, 280px);
+    height: auto;
+    aspect-ratio: 1;
+  }
+  .container .content-container .education .card .card-body-content {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .container .content-container .education .card .card-body-content .university-logo {
+    width: 70px;
+    min-width: 70px;
+    min-height: 70px;
+  }
+  .container .content-container .education .card .card-body-content .year {
+    width: auto;
+    font-size: 0.8rem;
+  }
+  .container .content-container .education .card .card-body-content .content .card-title {
+    font-size: 1rem;
+  }
+  .container .content-container .education .card .card-body-content .content .card-subtitle {
+    font-size: 0.95rem;
+  }
+  .container .content-container .experiences .card .card-body-content,
+  .container .content-container .projects .card .card-body-content {
+    flex-direction: column;
+  }
+  .container .content-container .projects .card .card-body-content .image {
+    width: 100%;
+  }
+  .container .content-container .projects .card .card-body-content .image img {
+    width: 100%;
+    max-width: 180px;
     height: auto;
   }
-  /* About::mobile::end */
-  /* Service::mobile::begin */
-
-  /* .container .content-container .services {
-        margin-top: 50px;
-    } */
-  .container .content-container .skills .skill-card {
-    margin-bottom: 15px;
-  }
-  /* Skills::mobile::end */
-
-  /* Experience::mobile::begin */
-  /* .container .content-container .experiences {
-        margin-top: 50px;
-    } */
-  .container .content-container .experiences .experiences-contnet {
-    gap: 30px;
-  }
-  .container .content-container .experiences .card .card-body-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
-  .container .content-container .experiences .card .card-body-content .year {
-    font-weight: 800;
-    --tw-text-opacity: 1;
-    width: 100%;
-    color: rgb(226, 232, 240 / var(--tw-text-opacity));
-    text-transform: uppercase;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 6px;
-  }
-
-  .container
-    .content-container
-    .experiences
-    .card
-    .card-body-content
-    .year
-    img.exp-logo {
-    width: 50px;
-    height: 50px;
-  }
-
-  .container
-    .content-container
-    .experiences
-    .card
-    .card-body-content
-    .year
-    img.wide-logo {
-    width: auto;
-    max-width: 130px;
-    height: 45px;
-  }
-
-  .container
-    .content-container
-    .experiences
-    .card
-    .card-body-content
-    .year
-    .year-date {
-    width: 100%;
-    text-align: center;
-  }
-
-  .container
-    .content-container
-    .experiences
-    .card
-    .card-body-content
-    .card-text {
-    text-align: justify;
-  }
-
-  /* Experience::mobile::end */
-
-  /* Project::mobile::begin */
-  /* .container .content-container .projects {
-        margin-top: 50px;
-    } */
-  .container .content-container .projects .projects-contnet {
-    /* display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 30px; */
-  }
-
-  .container .content-container .projects .card .card-body-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    /* padding-left: 20px; */
-    /* padding-right: 20px; */
-  }
-  .container
-    .content-container
-    .projects
-    .card
-    .card-body-content
-    .description {
-    text-align: justify;
-  }
-  .container
-    .content-container
-    .projects
-    .card
-    .card-body-content
-    .card-subtitle {
-    margin: 10px;
-  }
-  /* Project::mobile::end */
-  /* Contact::mobile::begin */
-  /* .container .content-container .contact {
-        margin-top: 50px;
-    } */
   .container .content-container .contact .contact-contnet {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid #3a3a3a;
-    border-radius: 10px;
-    padding: 10px 30px;
-    gap: 50px;
-    row-gap: 40px;
+    padding: 20px 18px;
   }
-  /* Contact::mobile::end */
-
-  .container .content-container .skills {
-    margin-top: 60px;
-  }
-  /* Education/Publications/Certificates::mobile */
-  .container .content-container .education,
-  .container .content-container .publications,
-  .container .content-container .certificates {
-    margin-top: 60px;
-  }
-
-  .container .content-container .certificates .cert-card {
-    margin-bottom: 15px;
-  }
-
-  /* Footer::mobile::begin */
-  .container .content-container .footer .footer-contact h3 {
-    display: grid;
-    place-items: center;
-    margin-bottom: 10px;
-  }
-  .container .content-container .footer {
-    margin-top: 100px;
-  }
-
   .container .content-container .footer .footer-bottom {
     flex-direction: column;
+    gap: 12px;
+    text-align: center;
   }
-
-  .container .content-container .footer .footer-bottom .credits {
-    margin-top: 10px;
-  }
-
-  .container .content-container .footer .footer-bottom .footer-name {
-    display: block;
-  }
-  /* Footer::mobile::end */
 }
